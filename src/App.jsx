@@ -1,35 +1,22 @@
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import ProfileCard from "./components/ProfileCard";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <h1>SuuSri Internship - About Page</h1>
+      <Navbar />
 
-      <div className="card">
-        <h2>Intern Details</h2>
-        <p><strong>Name:</strong> Mohine Priyadarsani</p>
-        <p><strong>Project:</strong> SuuSri Full-Stack Developer Internship</p>
-        <p><strong>Week:</strong> Week 1 - Git & React Practice</p>
-      </div>
+      <div className="main-layout">
+        <Sidebar />
 
-      <div className="card">
-        <h2>Technology Stack</h2>
-        <ul>
-          <li>React.js</li>
-          <li>Vite</li>
-          <li>JavaScript (ES6)</li>
-          <li>CSS3</li>
-          <li>Git & GitHub</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
+        <main className="content">
+          <h1>Welcome, Mohine! 👋</h1>
+          <p>This is your SuuSri internship dashboard.</p>
 
-      <div className="card">
-        <h2>Internship Goal</h2>
-        <p>
-          Build a full-stack Task Manager application using React for the
-          frontend and backend APIs during the internship program.
-        </p>
+          <ProfileCard />
+        </main>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ function App() {
 
         <main className="content">
           <h1>Welcome, Mohine! 👋</h1>
-          <p>This is your SuuSri internship dashboard.</p>
+          <p>This is your SuuSri internship dashboard. Week 1 Day 4 completed!</p>
 
           <ProfileCard />
         </main>
